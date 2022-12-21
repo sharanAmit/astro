@@ -1,0 +1,750 @@
+// SingleChildScrollView(
+//             child: Stack(
+//               children: [
+//                 Widgets.customPaint(),
+//                 Column(
+//                   mainAxisSize: MainAxisSize.max,
+//                   crossAxisAlignment: CrossAxisAlignment.center,
+//                   children: [
+                    
+//                     height30,
+//                     DefaultTabController(
+//                       length: 3, // length of tabs
+//                       initialIndex: 0,
+//                       child: Column(
+//                         crossAxisAlignment: CrossAxisAlignment.stretch,
+//                         children: <Widget>[
+//                           Container(
+//                             child: 
+//                             TabBar(
+//                               indicatorSize: TabBarIndicatorSize.label,
+//                               indicatorColor: tabColor,
+//                               indicatorWeight: 3.0,
+//                               tabs: [
+//                                 Tab(
+//                                   child: Container(
+//                                     height: 34.h,
+//                                     width: 120.w,
+//                                     // decoration: BoxDecoration(
+//                                     //   color: greyishColor,
+//                                     //   borderRadius: BorderRadius.circular(5.r),
+//                                     // ),
+//                                     // color: primaryColor,
+//                                     child: Center(
+//                                       child: Text(
+//                                         "Wallet",
+//                                         style: GoogleFonts.urbanist(
+//                                             color: blackcolor,
+//                                             fontWeight: FontWeight.w600,
+//                                             fontSize: 18),
+//                                       ),
+//                                     ),
+//                                   ),
+//                                 ),
+//                                 Tab(
+//                                   child: Container(
+//                                     height: 34.h,
+//                                     width: 120.w,
+//                                     // decoration: BoxDecoration(
+//                                     //   color: greyishColor,
+//                                     //   borderRadius: BorderRadius.circular(5.r),
+//                                     // ),
+//                                     // color: primaryColor,
+//                                     child: Center(
+//                                       child: Text(
+//                                         "Chat",
+//                                         style: GoogleFonts.urbanist(
+//                                             color: blackcolor,
+//                                             fontWeight: FontWeight.w600,
+//                                             fontSize: 18),
+//                                       ),
+//                                     ),
+//                                   ),
+//                                 ),
+//                                 Tab(
+//                                   child: Container(
+//                                     height: 34.h,
+//                                     width: 120.w,
+//                                     // decoration: BoxDecoration(
+//                                     //   color: greyishColor,
+//                                     //   borderRadius: BorderRadius.circular(5.r),
+//                                     // ),
+//                                     // color: primaryColor,
+//                                     child: Center(
+//                                       child: Text(
+//                                         "Call",
+//                                         style: GoogleFonts.urbanist(
+//                                             color: blackcolor,
+//                                             fontWeight: FontWeight.w600,
+//                                             fontSize: 18),
+//                                       ),
+//                                     ),
+//                                   ),
+//                                 )
+//                               ],
+//                             ),
+//                           ),
+//                           Container(
+//                             height: MediaQuery.of(context)
+//                                 .size
+//                                 .height, //height of TabBarView
+//                             decoration: BoxDecoration(
+//                                 border: Border(
+//                                     top: BorderSide(
+//                                         color: Colors.grey, width: 0.5))),
+//                             child: 
+//                             TabBarView(
+//                               children: [
+//                                 Column(
+//                                   children: [
+//                                     Row(
+//                                       children: [
+//                                         Container(
+//                                           padding: const EdgeInsets.only(
+//                                             top: 15,
+//                                             left: 15,
+//                                           ),
+//                                           child: Column(
+//                                             crossAxisAlignment:
+//                                                 CrossAxisAlignment.start,
+//                                             children: [
+//                                               Text(
+//                                                 "Available Balance",
+//                                                 style: GoogleFonts.urbanist(
+//                                                     fontSize: 15,
+//                                                     letterSpacing: 1.3,
+//                                                     fontWeight:
+//                                                         FontWeight.w500),
+//                                               ),
+//                                               height10,
+//                                               Text(
+//                                                 "₹ 0",
+//                                                 style: GoogleFonts.urbanist(
+//                                                     fontSize: 22,
+//                                                     letterSpacing: 1.3,
+//                                                     fontWeight:
+//                                                         FontWeight.w700),
+//                                               ),
+//                                             ],
+//                                           ),
+//                                         ),
+//                                         Container(
+//                                           height: 40,
+//                                           width: 110,
+//                                           margin: EdgeInsets.only(left: 110),
+//                                           // padding: EdgeInsets.only(top: 15, left: 105),
+//                                           decoration: BoxDecoration(
+//                                               color: darkprimaryColor,
+//                                               borderRadius:
+//                                                   BorderRadius.circular(10)),
+//                                           child: Center(
+//                                             child: Text(
+//                                               "Recharge",
+//                                               style: GoogleFonts.urbanist(
+//                                                   fontSize: 15,
+//                                                   color: whitecolor,
+//                                                   letterSpacing: 1.3,
+//                                                   fontWeight: FontWeight.w600),
+//                                             ),
+//                                           ),
+//                                         )
+//                                       ],
+//                                     ),
+//                                     Row(
+//                                       children: [
+//                                         InkWell(
+//                                           onTap: () {
+//                                             controller.isWallet.value = true;
+//                                           },
+//                                           child: Container(
+//                                             margin: EdgeInsets.only(
+//                                                 left: 7, top: 15),
+//                                             height: 45,
+//                                             decoration: BoxDecoration(
+//                                               color: darkprimaryColor,
+//                                               borderRadius:
+//                                                   BorderRadius.circular(35.r),
+//                                             ),
+//                                             width: 200,
+//                                             child: Center(
+//                                               child: Text(
+//                                                 "Wallet Transaction",
+//                                                 style: GoogleFonts.urbanist(
+//                                                   fontSize: 14,
+//                                                   color: whitecolor,
+//                                                   letterSpacing: 1.3,
+//                                                   fontWeight: FontWeight.w600,
+//                                                 ),
+//                                               ),
+//                                             ),
+//                                           ),
+//                                         ),
+//                                         width10,
+//                                         InkWell(
+//                                           onTap: () {
+//                                             controller.isWallet.value = false;
+//                                           },
+//                                           child: Container(
+//                                             margin: EdgeInsets.only(
+//                                               top: 15,
+//                                             ),
+//                                             height: 45,
+//                                             decoration: BoxDecoration(
+//                                               color: lightGrey,
+//                                               borderRadius:
+//                                                   BorderRadius.circular(28.r),
+//                                             ),
+//                                             width: 180,
+//                                             child: Center(
+//                                               child: Text(
+//                                                 "Payment Logs",
+//                                                 style: GoogleFonts.urbanist(
+//                                                     fontSize: 14,
+//                                                     color: blackcolor,
+//                                                     letterSpacing: 1.3,
+//                                                     fontWeight:
+//                                                         FontWeight.w600),
+//                                               ),
+//                                             ),
+//                                           ),
+//                                         ),
+//                                       ],
+//                                     ),
+//                                     Obx(() {
+//                                       return controller.isWallet.value == true
+//                                           ? Expanded(
+//                                               child: ListView.builder(
+//                                                   shrinkWrap: true,
+//                                                   itemCount:
+//                                                       controller.wallet.length,
+//                                                   physics:
+//                                                       NeverScrollableScrollPhysics(),
+//                                                   itemBuilder:
+//                                                       ((context, index) {
+//                                                     return Container(
+//                                                       padding: EdgeInsets.only(
+//                                                         left: 15,
+//                                                         top: 10,
+//                                                         bottom: 15,
+//                                                       ),
+//                                                       decoration: BoxDecoration(
+//                                                         boxShadow: [
+//                                                           BoxShadow(
+//                                                             color: blackcolor
+//                                                                 .withOpacity(
+//                                                                     0.25),
+//                                                             blurRadius:
+//                                                                 1.0, // soften the shadow
+//                                                             // spreadRadius: 5.0, //extend the shadow
+//                                                             offset: Offset(
+//                                                               0.0, // Move to right 10  horizontally
+//                                                               1.0, // Move to bottom 10 Vertically
+//                                                             ),
+//                                                           )
+//                                                         ],
+//                                                         color: whitecolor,
+//                                                         borderRadius:
+//                                                             BorderRadius
+//                                                                 .circular(10),
+//                                                       ),
+//                                                       margin: EdgeInsets.only(
+//                                                         left: 10,
+//                                                         top: 10,
+//                                                         right: 10,
+//                                                       ),
+//                                                       child: Row(
+//                                                         mainAxisAlignment:
+//                                                             MainAxisAlignment
+//                                                                 .spaceBetween,
+//                                                         children: [
+//                                                           Column(
+//                                                             crossAxisAlignment:
+//                                                                 CrossAxisAlignment
+//                                                                     .start,
+//                                                             children: [
+//                                                               Text(
+//                                                                 "Chat with ${controller.wallet[index].astrologersName}",
+//                                                                 style: GoogleFonts
+//                                                                     .urbanist(
+//                                                                   fontSize: 18,
+//                                                                   fontWeight:
+//                                                                       FontWeight
+//                                                                           .w600,
+//                                                                   color:
+//                                                                       primaryColor1,
+//                                                                 ),
+//                                                               ),
+//                                                               Text(
+//                                                                 "For ${controller.wallet[index].time} Minutes",
+//                                                                 style: GoogleFonts
+//                                                                     .urbanist(
+//                                                                   fontSize: 18,
+//                                                                   fontWeight:
+//                                                                       FontWeight
+//                                                                           .w600,
+//                                                                   color:
+//                                                                       primaryColor1,
+//                                                                 ),
+//                                                               ),
+//                                                               height5,
+//                                                               Text(
+//                                                                 controller
+//                                                                     .wallet[
+//                                                                         index]
+//                                                                     .dateTime,
+//                                                                 style: GoogleFonts
+//                                                                     .urbanist(
+//                                                                   fontSize: 12,
+//                                                                 ),
+//                                                               ),
+//                                                               height5,
+//                                                               Row(
+//                                                                 children: [
+//                                                                   Text(
+//                                                                     controller
+//                                                                         .wallet[
+//                                                                             index]
+//                                                                         .code,
+//                                                                     style: GoogleFonts.urbanist(
+//                                                                         fontSize:
+//                                                                             12,
+//                                                                         fontWeight:
+//                                                                             FontWeight
+//                                                                                 .w600,
+//                                                                         color: blackcolor
+//                                                                             .withOpacity(0.8)),
+//                                                                   ),
+//                                                                   width5,
+//                                                                   Icon(
+//                                                                     Icons.copy,
+//                                                                     size: 10,
+//                                                                   )
+//                                                                 ],
+//                                                               ),
+//                                                               height5,
+//                                                             ],
+//                                                           ),
+//                                                           Padding(
+//                                                               padding:
+//                                                                   const EdgeInsets
+//                                                                           .only(
+//                                                                       right: 15,
+//                                                                       bottom:
+//                                                                           5),
+//                                                               child: Row(
+//                                                                 children: [
+//                                                                   Text(
+//                                                                       controller
+//                                                                           .wallet[
+//                                                                               index]
+//                                                                           .amount
+//                                                                           .toString(),
+//                                                                       style: GoogleFonts.urbanist(
+//                                                                           color:
+//                                                                               green,
+//                                                                           fontSize:
+//                                                                               20,
+//                                                                           fontWeight:
+//                                                                               FontWeight.w600)),
+//                                                                 ],
+//                                                               ))
+//                                                         ],
+//                                                       ),
+//                                                     );
+//                                                   })),
+//                                             )
+//                                           : Text(
+//                                               "Nothing to show",
+//                                               style: GoogleFonts.urbanist(
+//                                                   fontSize: 22,
+//                                                   fontWeight: FontWeight.w600,
+//                                                   color: lightGrey),
+//                                             );
+//                                     })
+//                                   ],
+//                                 ),
+//                                 Column(
+//                                   children: [
+//                                     height20,
+//                                     TextFormField(
+//                                       decoration: InputDecoration(
+//                                         contentPadding: EdgeInsets.only(
+//                                           top: 5,
+//                                           left: 15,
+//                                           right: 15,
+//                                         ), // add padding to adjust text
+//                                         isDense: true,
+//                                         hintText: "Email",
+//                                         prefixIcon: Padding(
+//                                           padding: EdgeInsets.only(
+//                                             top: 5,
+//                                             left: 15,
+//                                             right: 15,
+//                                           ), // add padding to adjust icon
+//                                           child: Icon(
+//                                             Icons.search,
+//                                             color: lightGrey,
+//                                           ),
+//                                         ),
+//                                       ),
+//                                     ),
+//                                     // Container(
+//                                     //   height: 45,
+//                                     //   width: MediaQuery.of(context).size.width *
+//                                     //       95 /
+//                                     //       100,
+//                                     //   decoration: BoxDecoration(
+//                                     //     color: whitecolor,
+//                                     //     borderRadius: BorderRadius.circular(25),
+//                                     //   ),
+//                                     //   child: Row(
+//                                     //     children: [
+//                                     //       width10,
+//                                     //       width5,
+//                                     //       Icon(
+//                                     //         Icons.search,
+//                                     //         color: lightGrey,
+//                                     //       ),
+//                                     //       width5,
+//                                     //       Text(
+//                                     //         "Search Message",
+//                                     //         style: GoogleFonts.urbanist(
+//                                     //             color: lightGrey),
+//                                     //       )
+//                                     //     ],
+//                                     //   ),
+//                                     // ),
+//                                     SizedBox(
+//                                       height: 800,
+//                                       child: ListView.builder(
+//                                           itemCount:
+//                                               controller.chatHistory.length,
+//                                           physics: BouncingScrollPhysics(),
+//                                           itemBuilder: (context, index) {
+//                                             return Container(
+//                                               padding: EdgeInsets.only(
+//                                                 left: 15,
+//                                                 top: 15,
+//                                                 bottom: 15,
+//                                               ),
+//                                               decoration: BoxDecoration(
+//                                                   boxShadow: [
+//                                                     BoxShadow(
+//                                                       color: blackcolor
+//                                                           .withOpacity(0.25),
+//                                                       blurRadius:
+//                                                           1.0, // soften the shadow
+//                                                       // spreadRadius: 5.0, //extend the shadow
+//                                                       offset: Offset(
+//                                                         0.0, // Move to right 10  horizontally
+//                                                         1.0, // Move to bottom 10 Vertically
+//                                                       ),
+//                                                     )
+//                                                   ],
+//                                                   color: whitecolor,
+//                                                   borderRadius:
+//                                                       BorderRadius.circular(
+//                                                           10)),
+//                                               margin: EdgeInsets.only(
+//                                                 left: 10,
+//                                                 top: 10,
+//                                                 right: 10,
+//                                               ),
+//                                               child: Row(
+//                                                 mainAxisAlignment:
+//                                                     MainAxisAlignment
+//                                                         .spaceBetween,
+//                                                 children: [
+//                                                   Column(
+//                                                     crossAxisAlignment:
+//                                                         CrossAxisAlignment
+//                                                             .start,
+//                                                     children: [
+//                                                       Text(
+//                                                         controller
+//                                                             .chatHistory[index]
+//                                                             .chatcode,
+//                                                         style: GoogleFonts
+//                                                             .urbanist(
+//                                                           fontSize: 12,
+//                                                           color: greyTextColor,
+//                                                         ),
+//                                                       ),
+//                                                       height5,
+//                                                       Text(
+//                                                         controller
+//                                                             .chatHistory[index]
+//                                                             .astrologersName,
+//                                                         style: GoogleFonts
+//                                                             .urbanist(
+//                                                           fontSize: 18,
+//                                                           fontWeight:
+//                                                               FontWeight.w600,
+//                                                           color: primaryColor1,
+//                                                         ),
+//                                                       ),
+//                                                       height5,
+//                                                       Text(
+//                                                         controller
+//                                                             .chatHistory[index]
+//                                                             .dateTime,
+//                                                         style: GoogleFonts
+//                                                             .urbanist(
+//                                                           fontSize: 12,
+//                                                         ),
+//                                                       ),
+//                                                       height5,
+//                                                       Text(
+//                                                         controller
+//                                                             .chatHistory[index]
+//                                                             .chatStatus,
+//                                                         style: GoogleFonts
+//                                                             .urbanist(
+//                                                           fontSize: 12,
+//                                                           fontWeight:
+//                                                               FontWeight.w600,
+//                                                           color: green,
+//                                                         ),
+//                                                       ),
+//                                                       height5,
+//                                                       Row(
+//                                                         children: [
+//                                                           Text(
+//                                                             "Chat Type: ",
+//                                                             style: GoogleFonts
+//                                                                 .urbanist(
+//                                                               fontSize: 12,
+//                                                               fontWeight:
+//                                                                   FontWeight
+//                                                                       .w500,
+//                                                             ),
+//                                                           ),
+//                                                           Text(
+//                                                             controller
+//                                                                 .chatHistory[
+//                                                                     index]
+//                                                                 .chatType,
+//                                                             style: GoogleFonts
+//                                                                 .urbanist(
+//                                                               fontSize: 12,
+//                                                               fontWeight:
+//                                                                   FontWeight
+//                                                                       .w600,
+//                                                               color: red,
+//                                                             ),
+//                                                           ),
+//                                                         ],
+//                                                       ),
+//                                                       height5,
+//                                                       Row(
+//                                                         children: [
+//                                                           Text(
+//                                                             "Rate: ",
+//                                                             style: GoogleFonts
+//                                                                 .urbanist(
+//                                                               fontSize: 12,
+//                                                               fontWeight:
+//                                                                   FontWeight
+//                                                                       .w500,
+//                                                             ),
+//                                                           ),
+//                                                           Text(
+//                                                             "${controller.chatHistory[index].charge}/min.",
+//                                                             style: GoogleFonts
+//                                                                 .urbanist(
+//                                                               fontSize: 12,
+//                                                               fontWeight:
+//                                                                   FontWeight
+//                                                                       .w500,
+//                                                             ),
+//                                                           ),
+//                                                         ],
+//                                                       ),
+//                                                       height5,
+//                                                       Row(
+//                                                         children: [
+//                                                           Text(
+//                                                             "Deduction: ",
+//                                                             style: GoogleFonts
+//                                                                 .urbanist(
+//                                                               fontSize: 12,
+//                                                               fontWeight:
+//                                                                   FontWeight
+//                                                                       .w500,
+//                                                             ),
+//                                                           ),
+//                                                           Text(
+//                                                             "₹${controller.chatHistory[index].amountDeducted}",
+//                                                             style: GoogleFonts
+//                                                                 .urbanist(
+//                                                               fontSize: 12,
+//                                                               fontWeight:
+//                                                                   FontWeight
+//                                                                       .w500,
+//                                                             ),
+//                                                           ),
+//                                                         ],
+//                                                       ),
+//                                                       height5,
+//                                                       Row(
+//                                                         children: [
+//                                                           Text(
+//                                                             "Duration: ",
+//                                                             style: GoogleFonts
+//                                                                 .urbanist(
+//                                                               fontSize: 12,
+//                                                               fontWeight:
+//                                                                   FontWeight
+//                                                                       .w500,
+//                                                             ),
+//                                                           ),
+//                                                           Text(
+//                                                             "${controller.chatHistory[index].timeDuration}min.",
+//                                                             style: GoogleFonts
+//                                                                 .urbanist(
+//                                                               fontSize: 12,
+//                                                               fontWeight:
+//                                                                   FontWeight
+//                                                                       .w500,
+//                                                             ),
+//                                                           ),
+//                                                         ],
+//                                                       ),
+//                                                       height5,
+//                                                       height2,
+//                                                       Container(
+//                                                         height: 30,
+//                                                         width: 200,
+//                                                         decoration:
+//                                                             BoxDecoration(
+//                                                           color:
+//                                                               lightprimaryColor,
+//                                                           borderRadius:
+//                                                               BorderRadius
+//                                                                   .circular(5),
+//                                                         ),
+//                                                         child: Row(
+//                                                           mainAxisAlignment:
+//                                                               MainAxisAlignment
+//                                                                   .center,
+//                                                           children: [
+//                                                             Icon(
+//                                                               Icons
+//                                                                   .whatsapp_rounded,
+//                                                               color: green,
+//                                                               size: 22,
+//                                                             ),
+//                                                             width5,
+//                                                             Text(
+//                                                               "Share with your friends",
+//                                                               style: GoogleFonts
+//                                                                   .urbanist(
+//                                                                 fontSize: 12,
+//                                                                 fontWeight:
+//                                                                     FontWeight
+//                                                                         .w500,
+//                                                               ),
+//                                                             )
+//                                                           ],
+//                                                         ),
+//                                                       )
+//                                                     ],
+//                                                   ),
+//                                                   Padding(
+//                                                     padding:
+//                                                         const EdgeInsets.only(
+//                                                             right: 15,
+//                                                             bottom: 75),
+//                                                     child: Column(
+//                                                       children: [
+//                                                         CircleAvatar(
+//                                                           maxRadius: 35.r,
+//                                                           child: ClipOval(
+//                                                             child: Image.asset(
+//                                                               "assets/icons/astro1.png",
+//                                                               // colorBlendMode: BlendMode.colorBurn,
+//                                                               width:
+//                                                                   MediaQuery.of(
+//                                                                           context)
+//                                                                       .size
+//                                                                       .width
+//                                                                       .w,
+//                                                               height:
+//                                                                   MediaQuery.of(
+//                                                                           context)
+//                                                                       .size
+//                                                                       .height
+//                                                                       .h,
+//                                                               fit: BoxFit.cover,
+//                                                             ),
+//                                                           ),
+//                                                         ),
+//                                                         height5,
+//                                                         Text(
+//                                                           "${homeController.astrologers[index].chatPrice}/min.",
+//                                                           style: GoogleFonts
+//                                                               .urbanist(
+//                                                             fontSize: 15,
+//                                                             fontWeight:
+//                                                                 FontWeight.w500,
+//                                                           ),
+//                                                         ),
+//                                                         height2,
+//                                                         Container(
+//                                                           height: 30,
+//                                                           width: 80,
+//                                                           decoration: BoxDecoration(
+//                                                               borderRadius:
+//                                                                   BorderRadius
+//                                                                       .circular(
+//                                                                           5),
+//                                                               border: Border.all(
+//                                                                   color:
+//                                                                       green)),
+//                                                           child: Center(
+//                                                             child: (Text(
+//                                                               "Chat",
+//                                                               style: GoogleFonts
+//                                                                   .urbanist(
+//                                                                 color: green,
+//                                                                 fontWeight:
+//                                                                     FontWeight
+//                                                                         .w700,
+//                                                                 letterSpacing:
+//                                                                     1.1,
+//                                                                 fontSize: 14.sp,
+//                                                               ),
+//                                                             )),
+//                                                           ),
+//                                                         )
+//                                                       ],
+//                                                     ),
+//                                                   )
+//                                                 ],
+//                                               ),
+//                                             );
+//                                           }),
+//                                     )
+//                                   ],
+//                                 ),
+//                                 Container(
+//                                   child: Center(
+//                                     child: Text(
+//                                       'Display Tab 3',
+//                                       style: TextStyle(
+//                                           fontSize: 22,
+//                                           fontWeight: FontWeight.bold),
+//                                     ),
+//                                   ),
+//                                 ),
+//                               ],
+//                             ),
+//                           ),
+//                         ],
+//                       ),
+//                     ),
+//                   ],
+//                 ),
+//               ],
+//             ),
+//           ),

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "762204583630",
+    "project_id": "astroapp-173e9",
+    "storage_bucket": "astroapp-173e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762204583630:android:d666a3b3bfb7a26d5fc29f",
+        "android_client_info": {
+          "package_name": "com.pinsoutinnovation.astro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762204583630-vaf6no1cnkok3p1l84j4v0ngng66iocm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pinsoutinnovation.astro",
+            "certificate_hash": "3bde869a368c1b77f9ebe3cd9d8c442d5c8ee55f"
+          }
+        },
+        {
+          "client_id": "762204583630-h4gpkjohunnrji9f8506hvd1c1omnn31.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaK1L7GRDamXvUmPWnRTBwJdeaoRU5cNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762204583630-h4gpkjohunnrji9f8506hvd1c1omnn31.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
